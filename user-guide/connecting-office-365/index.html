@@ -477,6 +477,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#log-in-using-a-browser-authentication" title="Log in using a browser authentication" class="md-nav__link">
+    Log in using a browser authentication
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -8985,6 +8992,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#log-in-using-a-browser-authentication" title="Log in using a browser authentication" class="md-nav__link">
+    Log in using a browser authentication
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -9123,6 +9137,11 @@
 <div class="codehilite"><pre><span></span>openssl pkcs12 -in protected.pfx -out privateKeyWithPassphrase.pem -nodes
 </pre></div>
 <p>At this point the <code>privateKeyWithPassphrase.pem</code> file can be used to log in the CLI for Microsoft 365 following the instructions above for logging in using a PEM certificate.</p>
+<h4 id="log-in-using-a-browser-authentication">Log in using a browser authentication<a class="headerlink" href="#log-in-using-a-browser-authentication" title="Permanent link">&para;</a></h4>
+<p>Yet another way to log in to Microsoft 365 in the CLI for Microsoft 365 is by using a an interactive browser authentication. To use this authentication method, call the login command with the <code>authType</code> option set to <code>browser</code>:</p>
+<div class="codehilite"><pre><span></span>m365 login --authType browser
+</pre></div>
+<p>This option is especially useful if you have conditional access policies configured in your tenant but you can also use it instead of the default device code flow.</p>
 <h3 id="check-login-status">Check login status<a class="headerlink" href="#check-login-status" title="Permanent link">&para;</a></h3>
 <p>To see if you're logged in to Microsoft 365 and if so, with which account, use the <code>status</code> command.</p>
 <p>If you're logged in to Microsoft 365 using a certificate, the <code>status</code> command will show the name of the Azure AD application used to log in.</p>

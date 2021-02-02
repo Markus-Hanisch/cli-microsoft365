@@ -8935,7 +8935,7 @@
 <h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
 <dl>
 <dt><code>-t, --authType [authType]</code></dt>
-<dd>The type of authentication to use. Allowed values <code>certificate,deviceCode,password,identity</code>. Default <code>deviceCode</code></dd>
+<dd>The type of authentication to use. Allowed values <code>certificate,deviceCode,password,identity,browser</code>. Default <code>deviceCode</code></dd>
 <dt><code>-u, --userName [userName]</code></dt>
 <dd>Name of the user to authenticate. Required when <code>authType</code> is set to <code>password</code></dd>
 <dt><code>-p, --password [password]</code></dt>
@@ -9015,6 +9015,9 @@ such as Azure Virtual Machines, Azure App Service or Azure Functions</p>
 </pre></div>
 <p>Log in to Microsoft 365 using your own Azure AD application that's restricted only to allow accounts from the specific tenant</p>
 <div class="codehilite"><pre><span></span>m365 login --appId 31359c7f-bd7e-475c-86db-fdb8c937548c --tenant 31359c7f-bd7e-475c-86db-fdb8c937548a
+</pre></div>
+<p>Log in to Microsoft 365 using the interactive browser authentication. Uses the identity of the current user.</p>
+<div class="codehilite"><pre><span></span>m365 login --authType browser
 </pre></div>
                 
                   
