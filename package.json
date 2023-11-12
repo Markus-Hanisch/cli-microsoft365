@@ -153,7 +153,7 @@
     "adal-node": "^0.2.1",
     "adaptivecards-templating": "^1.4.0",
     "applicationinsights": "^1.8.9",
-    "axios": "^0.21.1",
+    "axios": "^1.6.0",
     "easy-table": "^1.1.1",
     "inquirer": "^7.3.3",
     "jmespath": "^0.15.0",
